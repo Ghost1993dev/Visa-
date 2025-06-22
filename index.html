@@ -2,88 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>My Website with Bootstrap Tabs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pasini Visa Services</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f7f9fc;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #005f99;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #007acc;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      background: #004a75;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #555;
-    }
-    footer {
-      background: #005f99;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      margin-top: 40px;
-    }
-  </style>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
-<body>
+<body class="bg-light">
 
-  <header>
-    <h1>Welcome to Pasini Visa Services</h1>
-  </header>
+  <div class="container my-4">
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Visa Types</a>
-    <a href="#">Application</a>
-    <a href="#">Tracking</a>
-    <a href="#">FAQ</a>
-    <a href="#">Contact</a>
-  </nav>
+    <h1 class="text-center mb-4">Welcome to My Website</h1>
 
-  <main>
-    <h2>Your journey begins here!</h2>
-    <p>Need help with visa applications? Whether you're traveling, studying, or working abroad, we provide clear, step-by-step guidance to make the process simple and stress-free.</p>
-    <p>Explore our visa types, apply online, or check your application status easily with us.</p>
-  </main>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab">About</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab">Contact</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab">Services</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" type="button" role="tab">FAQ</button>
+      </li>
+    </ul>
 
-  <footer>
-    &copy; 2025 Pasini Visa Services. All rights reserved.
-  </footer>
+    <!-- Tab content -->
+    <div class="tab-content mt-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel">
+        <h2>Home</h2>
+        <p>Welcome to my website's home section.</p>
+      </div>
+      <div class="tab-pane fade" id="about" role="tabpanel">
+        <h2>About</h2>
+        <p>This is the about section. Tell your story here.</p>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel">
+        <h2>Contact</h2>
+        <p>Here’s how you can contact me.</p>
+      </div>
+      <div class="tab-pane fade" id="services" role="tabpanel">
+        <h2>Services</h2>
+        <p>List all the services you provide in this section.</p>
+      </div>
+      <div class="tab-pane fade" id="faq" role="tabpanel">
+        <h2>FAQ</h2>
+        <p>Frequently asked questions go here.</p>
+      </div>
+    </div>
 
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-
+  </html>
