@@ -1,80 +1,110 @@
-<!-- Services tab content with visa info -->
-<div class="tab-pane fade" id="services" role="tabpanel">
-  <h2>Services – Visa Information</h2>
-  <div class="accordion" id="visaAccordion">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Website with Colorful Visa Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Education Visa -->
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingEdu">
-        <button class="accordion-button bg-success-subtle text-dark" type="button"
-          data-bs-toggle="collapse" data-bs-target="#collapseEdu">
-          🌿 Education Visa
-        </button>
-      </h3>
-      <div id="collapseEdu" class="accordion-collapse collapse show" data-bs-parent="#visaAccordion">
-        <div class="accordion-body">
-          <ul class="mb-0">
-            <li><strong>F-1 & M-1 visas (US)</strong>: For academic or vocational studies; require school admission, Form I-20, SEVIS fee.</li>
-            <li><strong>J-1 visa</strong>: For exchange visitors participating in approved exchange programs.</li>
-          </ul>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body class="bg-light">
+
+  <div class="container my-4">
+
+    <h1 class="text-center mb-4">Welcome to My Website</h1>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button">About</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button">Contact</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button">Services</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" type="button">FAQ</button>
+      </li>
+    </ul>
+
+    <!-- Tab Contents -->
+    <div class="tab-content mt-3" id="myTabContent">
+      <!-- Home -->
+      <div class="tab-pane fade show active" id="home" role="tabpanel">
+        <h2>Home</h2>
+        <p>Welcome to my website's home section.</p>
+      </div>
+      <!-- About -->
+      <div class="tab-pane fade" id="about" role="tabpanel">
+        <h2>About</h2>
+        <p>This is the about section. Tell your story here.</p>
+      </div>
+      <!-- Contact -->
+      <div class="tab-pane fade" id="contact" role="tabpanel">
+        <h2>Contact</h2>
+        <p>Here’s how you can contact me.</p>
+      </div>
+
+      <!-- Services -->
+      <div class="tab-pane fade" id="services" role="tabpanel">
+        <h2>Services – Visa Options</h2>
+        <div class="row g-3">
+
+          <!-- Education Visa -->
+          <div class="col-md-6">
+            <div class="card bg-success-subtle border-0 shadow-sm p-3">
+              <h4 class="card-title">🌿 Education Visa</h4>
+              <p class="card-text mb-0"><strong>F-1 & M-1 (US):</strong> Academic/vocational; Form I-20 & SEVIS required.</p>
+              <p class="card-text mb-0"><strong>J-1:</strong> Cultural/exchange programs.</p>
+            </div>
+          </div>
+
+          <!-- Work Visa -->
+          <div class="col-md-6">
+            <div class="card bg-warning-subtle border-0 shadow-sm p-3">
+              <h4 class="card-title">🌻 Work Visa</h4>
+              <p class="card-text mb-0"><strong>H-1B:</strong> Specialty occupations with employer sponsorship.</p>
+              <p class="card-text mb-0"><strong>O-1:</strong> Extraordinary ability in sciences, arts, business, athletics.</p>
+            </div>
+          </div>
+
+          <!-- Treatment Visa -->
+          <div class="col-md-6">
+            <div class="card bg-info-subtle border-0 shadow-sm p-3">
+              <h4 class="card-title">💧 Treatment Visa</h4>
+              <p class="card-text mb-0"><strong>B-2 (US):</strong> Medical treatment with proof of need and finances.</p>
+            </div>
+          </div>
+
+          <!-- Talent Visa -->
+          <div class="col-md-6">
+            <div class="card bg-primary-subtle border-0 shadow-sm p-3">
+              <h4 class="card-title">🌸 Talent Visa</h4>
+              <p class="card-text mb-0"><strong>UK Global Talent:</strong> Leaders in academia, arts, tech. Requires endorsement.</p>
+              <p class="card-text mb-0"><strong>US O-1:</strong> Talent with international recognition.</p>
+              <p class="card-text mb-0"><strong>FR Passeport Talent:</strong> Multi-year visa up to 4 years for high-skilled workers.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
 
-    <!-- Work Visa -->
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingWork">
-        <button class="accordion-button collapsed bg-warning-subtle text-dark" type="button"
-          data-bs-toggle="collapse" data-bs-target="#collapseWork">
-          🌻 Work Visa
-        </button>
-      </h3>
-      <div id="collapseWork" class="accordion-collapse collapse" data-bs-parent="#visaAccordion">
-        <div class="accordion-body">
-          <ul class="mb-0">
-            <li><strong>H-1B visa (US)</strong>: Specialty occupations, bachelor’s degree & employer sponsorship.</li>
-            <li><strong>O-1 visa</strong>: Extraordinary abilities in arts, sciences, athletics, etc.</li>
-            <li><strong>Temporary worker visas</strong>: H-2A (agricultural), L-1 (intra-company transfer), and more.</li>
-          </ul>
-        </div>
+      <!-- FAQ -->
+      <div class="tab-pane fade" id="faq" role="tabpanel">
+        <h2>FAQ</h2>
+        <p>Frequently asked questions go here.</p>
       </div>
     </div>
-
-    <!-- Treatment Visa -->
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingTreat">
-        <button class="accordion-button collapsed bg-info-subtle text-dark" type="button"
-          data-bs-toggle="collapse" data-bs-target="#collapseTreat">
-          💧 Treatment Visa
-        </button>
-      </h3>
-      <div id="collapseTreat" class="accordion-collapse collapse" data-bs-parent="#visaAccordion">
-        <div class="accordion-body">
-          <ul class="mb-0">
-            <li><strong>B-2 visa (US)</strong>: Medical treatment & caregiving; requires medical proof, financial capacity, and return intent.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Talent Visa -->
-    <div class="accordion-item">
-      <h3 class="accordion-header" id="headingTalent">
-        <button class="accordion-button collapsed bg-primary-subtle text-dark" type="button"
-          data-bs-toggle="collapse" data-bs-target="#collapseTalent">
-          🌸 Talent Visa
-        </button>
-      </h3>
-      <div id="collapseTalent" class="accordion-collapse collapse" data-bs-parent="#visaAccordion">
-        <div class="accordion-body">
-          <ul class="mb-0">
-            <li><strong>UK Global Talent visa</strong>: Leaders in academia, arts, tech; endorsement or prestigious award; up to 5 years.</li>
-            <li><strong>US O-1 visa</strong>: Extraordinary achievements in specified fields.</li>
-            <li><strong>France Passeport Talent</strong>: For skilled workers or self-employed professionals, allowing stays up to 4 years.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </div>
-</div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+            </html>
